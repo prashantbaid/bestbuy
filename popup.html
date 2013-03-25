@@ -1,0 +1,461 @@
+<html>
+<head>
+<title>Best Buy</title>
+<style>
+body {
+	font: 14px Verdana, sans-serif;
+	min-width: 700px;
+	list-style-type: none !important;
+	overflow: auto;
+}	
+#search_box {	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	  margin: 0 auto;
+    border-radius: 4px 4px 4px 4px;
+	text-align: center;
+    color: #00000;
+    font-weight: bold;
+    line-height: 13px;
+    padding: 8px 9px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    width: 270px;
+	background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.42, rgb(240,237,245)),
+    color-stop(0.71, rgb(242,240,245)),
+    color-stop(0.86, rgb(245,245,245))
+);
+border: solid 1px #356AA8;
+}
+
+
+
+ul#tabnav { 
+text-align: left;
+margin: 1em 0 1em 0;
+border-bottom: 2px solid #356AA8; 
+list-style-type: none;
+padding: 3px 10px 3px 10px; 
+}
+
+ul#tabnav li { 
+display: inline;
+}
+
+body#tab1 li.tab1, body#tab2 li.tab2, body#tab3 li.tab3, body#tab4 li.tab4, body#tab5 li.tab5  { 
+border-bottom: 5px solid #356AA8; 
+}
+
+body#tab1 li.tab1 a, body#tab2 li.tab2 a, body#tab3 li.tab3 a, body#tab4 li.tab4 a, body#tab5 li.tab5 a { 
+
+color: #000; 
+position: relative;
+top: 1px;
+padding-top: 4px; 
+border-radius: 5px;
+}
+
+ul#tabnav li a { 
+padding: 3px 4px; 
+border: 2px solid #356AA8;
+opacity: 0.8;
+color: #666; 
+margin-right: 0px; 
+text-decoration: none;
+border-bottom: none;
+border-radius: 5px;
+}
+
+ul#tabnav a:hover {
+background: #fff;\
+}
+	 #search_button {
+	 text-align: center;
+	 	width: auto;
+	padding: 9px 15px;
+	background: #356AA8;
+	border: 0;
+	font-size: 14px;
+	color: #FFFFFF;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+	}
+	
+	
+#-------------------------------------------css for flipkart------------------------------	
+	.fk-normalfont, .fk-font-normal, .fkart .fksd-bodytext {
+font-size: 13px;
+}
+.fk-srch-item {
+border-bottom: 1px dotted #CCC;
+clear: left;
+padding: 15px 0;
+text-align: left;
+}
+.fk-srch-item .left {
+text-align: center;
+}
+.fk-srch-item .fk-sitem-image-section {
+width: 150px;
+min-height: 100px;
+padding-bottom: 50px;
+}
+.unit {
+float: left;
+}
+.bmargin10 {
+margin-bottom: 10px;
+}
+.fk-srch-item .fk-sitem-info-section {
+width: 400px;
+}
+.fk-srch-item .fk-itemdetail-info, .fk-srch-item .fk-srch-buysection {
+background-color: #F2F2F2;
+}
+.bmargin10 {
+margin-bottom: 10px;
+}
+.search_results {
+text-align: left;
+}
+.fk-srch-item .fk-srch-item-title, a {
+line-height: 13px;
+display: inline;
+font-weight: bold;
+padding: 0;
+margin: 0;
+color: #004B91;
+font-size: 11px;
+}
+.fk-srch-item .fk-sitem-info-section {
+width: 340px;
+}
+.fk-srch-item .fk-itemdetail-info, .fk-srch-item .fk-srch-buysection {
+background-color: #F2F2F2;
+}
+.fk-srch-item .dlvry-det {
+margin-bottom: 10px;
+}
+.fk-srch-item .fk-srch-buysection {
+padding: 10px 5px;
+}
+.fk-srch-item .right {
+padding-left: 10px;
+}
+.fk-item-specs-section, .fk-sitem-social-section {
+display: none;
+}
+.compare-check-holder, .product-ugc-summary, div.unit.num.fksd-smalltext{display: none;}
+
+#-----------------------------------------end of flipkart css--------------------------------
+
+
+#------------------------------------------letsbuy css-------------------------------------------
+.main_contentbox .imgborder {
+border: 0;
+float: left;
+background: whiteSmoke;
+width: 120px;
+height: 120px;
+text-align: center;
+
+}
+.imgborder {
+margin: 2px 18px 0 0; }
+.main_contentbox .search_products, .main_contentbox .featured {
+}
+.main_contentbox h2.green {
+font-size: 13px;
+color: black;
+line-height: 15px;
+margin: 0 0 10px;
+}
+h2.green span {
+font-size: 10px;
+color: #C00;
+font-weight: normal;
+margin: 0;
+}
+.strikethrough {
+font-size: 11px;
+height: 35px;
+color: #333;
+font-weight: normal;
+text-decoration: line-through;
+}
+.text11 {
+font-size: 11px;
+}
+.main_contentbox .home_addcart {
+margin: 0;
+display: inline;
+padding: 0 5px;
+}
+.detailbox {
+float: right;
+width: 300px;
+}
+.vdetails{ display: none; }
+.search_products {
+border-bottom: 1px solid #AAA;
+padding: 13px 15px 15px;
+overflow: hidden;
+width: 500px;
+float: left;
+}
+#--------------------------end of letsbuy css----------------------
+
+#---------------------------infibeam css---------------------------
+ul.search_result li {
+font: 12px arial,sans-serif;
+clear: both;
+background: url("../images/bullets/dot.gif") repeat-x bottom;
+text-align: left;
+line-height: 20px;
+padding: 11px 12px 12px 11px;
+border-bottom: 1px solid #EDEDED;
+min-height: 130px;
+}
+ul.search_result span{display: none;}
+ul.search_result li div.img {
+float: left;
+position: relative;
+width: 130px;
+min-height: 160px;
+height: 160px;
+}
+#search_result h2.simple {
+display: inline;
+font-weight: bold;
+margin: 0;
+padding: 0;
+color: black;
+background: transparent;
+line-height: normal;
+border: none;
+}
+span.listprice {
+text-decoration: line-through;
+color: #999;
+}
+.price a, .search_result li a, a.addtocompare{
+display: none;
+}
+</style>
+<script src="jquery.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+var xhr = new XMLHttpRequest();
+function ajax_submit_clicked() { 
+	var res = document.getElementById('results');
+	res.style.display = "none";
+	var link1 = submit_common1();
+	var link2 = submit_common2();
+	var link3 = submit_common3();
+//xmlResponse for flipkart
+	$("#results1").load(link1 + ' .fk-srch-item', function(response, status, xhr) {
+
+		imgTag.style.display="none";
+		
+		var best_deal=$("div.fk-srch-item").first();
+		$("#bestdeal").append(best_deal);	
+		if (status == "error") {
+			$("#results1").append("<h1>Page Not Found</h1>");
+		}});
+//xmlResponse for LetsBuy
+	$("#results2").load(link2 + ' .search_products', function(response, status, xhr) {
+		imgTag.style.display="none";
+		var best_deal=$("div.search_products").first();
+		$("#bestdeal").append(best_deal);
+		if (status == "error") {
+			$("#results2").append("<h1>Page Not Found</h1>");
+		}});
+//xmlResponse for infibeam
+	$("#results3").load(link3 + ' ul.search_result li', function(response, status, xhr) {
+		imgTag.style.display="none";
+		var best_deal=$(' ul.search_result li').first();
+		$("#bestdeal").append(best_deal);
+		if (status == "error") {
+			$("#results3").append("<h1>Page Not Found</h1>");
+		}});
+	var imgURL = chrome.extension.getURL("loading-spiral.gif");
+	var imgTag = document.createElement('img');
+	imgTag.setAttribute('src', imgURL);
+	
+	document.getElementById("results").appendChild(imgTag);
+	
+	var res = document.getElementById('results');
+	res.style.display = "block";
+}
+
+//getting flipkart search page url
+function submit_common1() {
+	var search_box = document.getElementById('search_box');
+	var search = search_box.value;
+	search = escape(search);
+	
+	var flipkart_url = "http://www.flipkart.com/search-all?dd=0&query=" + search + "&firstTimeSort=true&layout=&sort=price_asc";		
+	return flipkart_url;
+}
+function flipkart() {
+	var search_box = document.getElementById('search_box');
+	var search = search_box.value;
+	search = escape(search);
+	
+	var flipkart_url = "http://www.flipkart.com/search-all?dd=0&query=" + search + "&firstTimeSort=true&layout=&sort=price_asc";		
+	chrome.tabs.create({url: flipkart_url});
+}
+//getting letsbuy search page url
+function submit_common2() {
+	var search_box = document.getElementById('search_box');
+	var search = search_box.value;
+	search = escape(search);
+	var letsbuy_url = "http://www.letsbuy.com/advanced_search_result.php?keywords=" + search;		
+	return letsbuy_url;
+}
+function letsbuy() {
+	var search_box = document.getElementById('search_box');
+	var search = search_box.value;
+	search = escape(search);
+	var letsbuy_url = "http://www.letsbuy.com/advanced_search_result.php?keywords=" + search;		
+	chrome.tabs.create({url: letsbuy_url});
+}
+//getting infibeam search page url
+function submit_common3() {
+	var search_box = document.getElementById('search_box');
+	var search = search_box.value;
+	search = escape(search);
+	var infibeam_url = "http://www.infibeam.com/search?q=" + search;		
+	return infibeam_url;
+}
+function infibeam() {
+	var search_box = document.getElementById('search_box');
+	var search = search_box.value;
+	search = escape(search);
+	var infibeam_url = "http://www.infibeam.com/search?q=" + search;		
+	chrome.tabs.create({url: infibeam_url});
+}
+//getting twitter search url
+function twitter() {
+	var search_box = document.getElementById('search_box');
+	var search = search_box.value;
+	search = escape(search);
+	var twitter_url = "https://twitter.com/search/" + search;		
+	chrome.tabs.create({url: twitter_url});
+}
+//getting facebook url
+function facebook() {
+	var search_box = document.getElementById('search_box');
+	var search = search_box.value;
+	search = escape(search);
+	var facebook_url = "http://www.facebook.com/sharer/sharer.php?u=http://www.flipkart.com/search-all?query=" + search;
+	chrome.tabs.create({url: facebook_url});
+}
+
+//to produce toggle effect in tabs
+ function toggletab1() {
+		
+	    if (document.getElementById('results1').style.display == 'none') {
+	        document.getElementById('results1').style.display = 'block';
+			document.getElementById('results2').style.display = 'none';
+			document.getElementById('results3').style.display = 'none';
+			document.getElementById('bestdeal').style.display = 'none';
+			document.getElementById('extras').style.display = 'none';
+	    } else {
+	        document.getElementById('results1').style.display = 'none';
+	    }
+	}
+ function toggletab2() {
+		
+	    if (document.getElementById('results2').style.display == 'none') {
+	        document.getElementById('results2').style.display = 'block';
+			document.getElementById('results1').style.display = 'none';
+			document.getElementById('results3').style.display = 'none';
+			document.getElementById('bestdeal').style.display = 'none';
+			document.getElementById('extras').style.display = 'none';
+	    } else {
+	        document.getElementById('results2').style.display = 'none';
+	    }
+	}
+ function toggletab3() {
+		
+	    if (document.getElementById('results3').style.display == 'none') {
+	        document.getElementById('results3').style.display = 'block';
+			document.getElementById('results2').style.display = 'none';
+			document.getElementById('results1').style.display = 'none';
+			document.getElementById('bestdeal').style.display = 'none';
+			document.getElementById('extras').style.display = 'none';
+	    } else {
+	        document.getElementById('results3').style.display = 'none';
+	    }
+	}
+	 function toggletab4() {
+		
+	    if (document.getElementById('bestdeal').style.display == 'none') {
+	        document.getElementById('bestdeal').style.display = 'block';
+			document.getElementById('results2').style.display = 'none';
+			document.getElementById('results1').style.display = 'none';
+			document.getElementById('results3').style.display = 'none'
+			document.getElementById('extras').style.display = 'none';
+	    } else {
+	        document.getElementById('bestdeal').style.display = 'none';
+	    }
+	} 
+	 function toggletab5() {
+		
+	    if (document.getElementById('extras').style.display == 'none') {
+	        document.getElementById('extras').style.display = 'block';
+			document.getElementById('results2').style.display = 'none';
+			document.getElementById('results1').style.display = 'none';
+			document.getElementById('results3').style.display = 'none'
+			document.getElementById('bestdeal').style.display = 'none';
+	    } else {
+	        document.getElementById('extras').style.display = 'none';
+	    }
+	} 
+	
+	</script>
+
+</head>
+<body>
+<form>
+		
+
+	<input id = "search_box" type="text" />
+	<input type="button" name="button" value="Search" onclick = "ajax_submit_clicked();" id = "search_button" /><br />
+	Example: htc wildfire
+	</form>
+<ul id="tabnav">
+	<li class="tab4"><a href="#" onclick="toggletab4(); return false">Best Deal</a></li>
+	<li class="tab1"><a href="#" onclick="toggletab1(); return false">Flipkart</a></li>
+	<li class="tab2"><a href="#" onclick="toggletab2(); return false">Lets Buy</a></li>
+	<li class="tab3"><a href="#" onclick="toggletab3(); return false">Infibeam</a></li>
+	<li class="tab5"><a href="#" onclick="toggletab5(); return false">Extras</a></li>
+
+</ul>
+
+<div id = "results" style="display: none;">
+</div>
+<div id = "results1" style="display: none;">
+</div>
+
+<div id = "results2">
+</div>
+<div id = "results3" style="display: none;"></div>
+<div id="bestdeal" style="display: none;"></div>
+<div id="extras" style="display: none;">
+<p><a href="#" onclick="flipkart();">Go to Flipkart</a></p>
+<p><a href="#" onclick="letsbuy();">Go to Lets Buy</a></p>
+<p><a href="#" onclick="infibeam();">Go to Infibeam</a></p>
+<p><a href="#" onclick="twitter();">Search on Twitter</a></p>
+<p><a href="#" onclick="facebook();">Ask friends on Facebook</a></p>
+<br>
+<br>
+<br>
+<p>Made By:<br>Prashant Baid (2nd Year)<br>Avirag Shrivastava (2nd Year)<br>Saurabh Diwan (2nd Year)<br>
+</div>
+</body>
+</html>
+

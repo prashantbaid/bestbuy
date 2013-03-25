@@ -1,0 +1,10 @@
+{
+ "name" : "Best Deals" ,
+ "version" : "1.0",
+ "description": "Search Flipkart, LetsBuy and Infibeam for best deals", 
+ "browser_action" : {
+	"default_icon" : "icon.jpg" ,
+	"popup" : "popup.html" 
+ },
+ "permissions" : [ "http://*.letsbuy.com/", "http://*.flipkart.com/", "http://*.infibeam.com/" ]
+}
